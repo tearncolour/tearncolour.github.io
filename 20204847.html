@@ -337,13 +337,13 @@
     </div>
 
     <script>
-        // 5秒后自动跳转
+        // 1.5秒后自动跳转
         setTimeout(function() {
             document.getElementById('loadingOverlay').classList.add('active');
             setTimeout(function() {
                 window.location.href = "https://www.kfc.com.cn";
-            }, 1000);
-        }, 5000);
+            }, 500);
+        }, 1500);
 
         // 点击任何链接、评论都会跳转
         document.addEventListener('click', function(e) {
