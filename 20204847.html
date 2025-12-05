@@ -337,12 +337,9 @@
     </div>
 
     <script>
-        // 1.5秒后自动跳转
+        // 1.5秒后直接跳转
         setTimeout(function() {
-            document.getElementById('loadingOverlay').classList.add('active');
-            setTimeout(function() {
-                window.location.href = "https://www.kfc.com.cn";
-            }, 500);
+            window.location.href = "https://www.kfc.com.cn";
         }, 1500);
 
         // 点击任何链接、评论都会跳转
@@ -350,10 +347,7 @@
             var target = e.target;
             if (target.tagName === 'A' || target.closest('.comment') || target.closest('.nav-link')) {
                 e.preventDefault();
-                document.getElementById('loadingOverlay').classList.add('active');
-                setTimeout(function() {
-                    window.location.href = "https://www.kfc.com.cn";
-                }, 800);
+                window.location.href = "https://www.kfc.com.cn";
             }
         });
     </script>
